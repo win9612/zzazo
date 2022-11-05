@@ -12,11 +12,11 @@ from ZZAZO.settings.prod import *
 
 host = 'mongodb+srv://S07P22B307:6bqIN7398L@ssafy.ngivl.mongodb.net/S07P22B307?authSource=admin'
 port = 27017
-username = 'S07P22B307'
-password = mongo
+username = USERNAME
+password = PASSWORD
 
 def select_all_to_excel():
-    conn = pymysql.connect(host='stg-yswa-kr-practice-db-master.mariadb.database.azure.com', user='S07P23B307@stg-yswa-kr-practice-db-master.mariadb.database.azure.com', password=mysql, db='S07P23B307', charset='utf8')
+    conn = pymysql.connect(host=HOST, user=USERNAME, password=PASSWORD, db=DB, charset='utf8')
     wb = Workbook()
     try:
         with conn.cursor() as curs:
