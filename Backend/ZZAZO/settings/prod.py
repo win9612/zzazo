@@ -29,10 +29,10 @@ DATABASES = {
     # 디폴트에 서버에 올릴 MySQL 적어야 함 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'S07P23B307',
-        'USER': 'S07P23B307',
-        'PASSWORD': mysql,
-        'HOST': 'stg-yswa-kr-practice-db-master.mariadb.database.azure.com',
+        'NAME': NAME,
+        'USER': USER,
+        'PASSWORD': PASSWORD,
+        'HOST': HOST,
         'PORT': '3306'
     },
 
@@ -48,12 +48,12 @@ DATABASES = {
                 }
             },
          },
-        'NAME': 'S07P22B307',
+        'NAME': NAME,
         'CLIENT': {
-            'host': 'mongodb+srv://S07P22B307:6bqIN7398L@ssafy.ngivl.mongodb.net/S07P22B307?authSource=admin',
+            'host': HOST,
             'port': 27017,
-            'username': 'S07P22B307',
-            'password':mongo,
+            'username': USERNAME,
+            'password': PASSWORD,
             'authSource': 'admin',
             'authMechanism': 'SCRAM-SHA-1'
         }

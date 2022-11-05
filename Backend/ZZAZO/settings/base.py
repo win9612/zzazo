@@ -52,7 +52,7 @@ SWAGGER_SETTINGS = {
    }
 }
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-djx=c&gb(0g2s7yae&^_hk(sizwl=l(0m2=%s_9#ro^lco2xv+'
+SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -137,7 +137,7 @@ ROOT_URLCONF = 'django_rest_role_jwt.urls'
 EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = 'smtp.naver.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "hanghangjin@naver.com"
+EMAIL_HOST_USER = EMAIL
 
 EMAIL_USE_TLS = True
 REST_USE_JWT = True
